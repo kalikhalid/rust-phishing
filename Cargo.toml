@@ -1,0 +1,13 @@
+[package]
+name = "rocket"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.5.0"
+rocket_dyn_templates = { version = "0.1.0", features = ["handlebars", "tera"] }
+teloxide = { version = "0.12", features = ["macros"] }
+tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
+log = "0.4.21"
